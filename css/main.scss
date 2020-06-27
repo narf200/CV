@@ -1,0 +1,100 @@
+$primary-color: #2f80ed;
+$secondary-color: #333333;
+
+html {
+font-family: Roboto, sans-serif;
+}
+
+* {
+  color: $secondary-color;
+}
+
+h1 {
+  color: $primary-color;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  color: $secondary-color;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h3 {
+  color: $primary-color;
+}
+
+a {
+  color: $primary-color;
+}
+
+.photo {
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background: #f0f0f0;
+    flex-shrink: 0;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+.cv {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.personals {
+  margin-bottom: 2em;
+}
+
+.personal {
+  display: flex;
+
+  &__typ {
+    min-width: 185px;
+  }
+}
+
+.contacts{
+  margin-bottom: 2em;
+}
+
+.contact {
+  display: flex;
+
+  &__type {
+    min-width: 150px;
+  }
+  &__value {
+    margin-left: 2em;
+  }
+}
+
+.experience {
+  display: flex;
+  margin-bottom: 2em;
+  &__description{
+    margin-left: 2em;
+  }
+  &__description2{
+    margin-left: 6em;
+  }
+  &__date{
+    min-width: 185px;
+    margin-bottom: 1em;
+  }
+  &__name {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 575px) {
+  .experience {
+    display: block;
+  }
+}
